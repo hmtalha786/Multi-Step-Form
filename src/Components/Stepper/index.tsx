@@ -12,8 +12,6 @@ import StepLabel from "@material-ui/core/StepLabel";
 import HttpsIcon from "@material-ui/icons/Https";
 import PaymentIcon from "@material-ui/icons/Payment";
 import StepConnector from "@material-ui/core/StepConnector";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
 import { StepIconProps } from "@material-ui/core/StepIcon";
 import Form1 from "../Form1";
 import Form2 from "../Form2";
@@ -63,9 +61,6 @@ const useColorlibStepIconStyles = makeStyles({
   completed: {
     backgroundColor: "#4eb7f8 ",
   },
-  //   backgroundImage:
-  //     "linear-gradient( 136deg, rgb(242,113,33) 0%, rgb(233,64,87) 50%, rgb(138,35,135) 100%)",
-  // },
 });
 
 function ColorlibStepIcon(props: StepIconProps) {
@@ -202,39 +197,6 @@ export default function CustomizedSteppers() {
 
       <div>
         {getStepContent(activeStep, setFormValues, formValues)}
-        {/* {activeStep === steps.length ? (
-          <div>
-            <Typography className={classes.instructions}>
-              All steps completed - you&apos;re finished
-            </Typography>
-            <Button onClick={handleReset} className={classes.button}>
-              Reset
-            </Button>
-          </div>
-        ) : (
-            <div>
-              <Typography className={classes.instructions}>
-                {getStepContent(activeStep)}
-              </Typography>
-              <div>
-                <Button
-                  disabled={activeStep === 0}
-                  onClick={handleBack}
-                  className={classes.button}
-                >
-                  Back
-                </Button>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  onClick={handleNext}
-                  className={classes.button}
-                >
-                  {activeStep === steps.length - 1 ? "Finish" : "Next"}
-                </Button>
-              </div>
-            </div>
-        )} */}
       </div>
     </div>
   );

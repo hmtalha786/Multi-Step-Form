@@ -1,34 +1,18 @@
 import * as React from "react";
 import {
   Formik,
-  FormikHelpers,
-  FormikProps,
   Form,
   Field,
-  FieldProps,
   ErrorMessage,
 } from "formik";
 import {
-  TimePicker,
-  DatePicker,
-  DateTimePicker,
-} from "formik-material-ui-pickers";
-import {
-  Box,
   Button,
-  createStyles,
-  FormControl,
   InputLabel,
-  makeStyles,
   MenuItem,
-  Radio,
   Select,
   TextField,
-  Theme,
-  Typography,
 } from "@material-ui/core";
 import "./form3.css";
-import { Agent } from "http";
 import * as Yup from "yup";
 interface formData {
   firstName: string;

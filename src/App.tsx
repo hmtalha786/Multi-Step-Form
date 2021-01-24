@@ -1,8 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import CustomizedSteppers from "./Components/Stepper";
-import { Box, Typography } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 
 function App() {
   return (

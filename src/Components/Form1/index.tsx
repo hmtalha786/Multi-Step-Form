@@ -1,11 +1,8 @@
 import * as React from "react";
 import {
   Formik,
-  FormikHelpers,
-  FormikProps,
   Form,
   Field,
-  FieldProps,
   ErrorMessage,
 } from "formik";
 import * as Yup from "yup";
@@ -19,7 +16,6 @@ interface MyFormValues {
   contactNumber: number;
   gender: string;
 }
-const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 const validation = Yup.object({
   firstName: Yup.string()
     .min(5, "Too Short")
