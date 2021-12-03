@@ -5,7 +5,6 @@ import {
   Grid,
   TextField,
   Button,
-  Typography,
   CheckboxProps,
   FormControlLabel,
   Checkbox,
@@ -68,10 +67,6 @@ const AccountInformation: FC<Props> = ({
           return (
             <Form>
               <div>
-                {/* <Typography className="heading" variant="h5">
-                  Account Informatoin
-                </Typography> */}
-
                 <Container maxWidth="sm">
                   <Grid container spacing={3} justify="center" className="data">
                     <Grid item sm={12} md={12} lg={12}>
@@ -151,16 +146,6 @@ const AccountInformation: FC<Props> = ({
                         Next
                       </Button>
                     </Grid>
-
-                    {/* <div className="buttons">
-                      <Button
-                        variant="contained"
-                        color="primary"
-                        onClick={() => submit(0)}
-                      >
-                        Back
-                      </Button>
-                    </div> */}
                   </Grid>
                 </Container>
               </div>
